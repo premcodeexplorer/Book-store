@@ -2,12 +2,12 @@ from django.urls import path
 from . import views
 from .views import AdminDashboardView, BookListView, BookCreateView
 urlpatterns = [
-    # Authentication
+ 
     path('register/', views.RegisterView.as_view(), name='register'),
     path('login/', views.LoginView.as_view(), name='login'),
     path('logout/', views.LogoutView.as_view(), name='logout'),
     
-    # Admin
+ 
      path('admin/dashboard/', AdminDashboardView.as_view(), name='admin_dashboard'),
     path('admin/dashboard/', views.AdminDashboardView.as_view(), name='admin_dashboard'),
     path('admin/books/', views.BookListView.as_view(), name='admin_book_list'),
@@ -15,7 +15,7 @@ urlpatterns = [
     path('admin/books/<int:pk>/edit/', views.BookUpdateView.as_view(), name='admin_book_edit'),
     path('admin/books/<int:pk>/delete/', views.BookDeleteView.as_view(), name='admin_book_delete'),
     
-    # Store
+  
     path('', views.StoreBookListView.as_view(), name='book_list'),
     path('books/<int:pk>/', views.StoreBookDetailView.as_view(), name='book_detail'),
     path('cart/', views.CartView.as_view(), name='cart'),
