@@ -4,13 +4,13 @@ from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
     is_admin = models.BooleanField(default=False)
     
-    # Add these to resolve the conflicts
+   
     groups = models.ManyToManyField(
         'auth.Group',
         verbose_name='groups',
         blank=True,
         help_text='The groups this user belongs to.',
-        related_name='core_user_groups',  # Changed
+        related_name='core_user_groups', 
         related_query_name='user',
     )
     user_permissions = models.ManyToManyField(
@@ -18,7 +18,7 @@ class User(AbstractUser):
         verbose_name='user permissions',
         blank=True,
         help_text='Specific permissions for this user.',
-        related_name='core_user_permissions',  # Changed
+        related_name='core_user_permissions',  
         related_query_name='user',
     )
 
