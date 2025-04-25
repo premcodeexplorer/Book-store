@@ -31,8 +31,8 @@ A complete bookstore management system built with Django, featuring user authent
 ## Tech Stack
 
 **Backend:**
-- Python 3.9
-- Django 5.2
+- Python 
+- Django 
 
 **Frontend:**
 - HTML5, CSS3
