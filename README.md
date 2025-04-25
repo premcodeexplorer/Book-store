@@ -21,12 +21,12 @@ A complete bookstore management system built with Django, featuring user authent
 
 ## Features
 
-- 📚 User authentication (register/login/logout)
-- 👨‍💻 Custom admin panel (add/edit/delete books)
-- 🛒 Session-based shopping cart
-- 📱 Responsive design with Bootstrap
-- 🐳 Docker containerization
-- 🔄 CI/CD pipeline with Jenkins
+- User authentication (register/login/logout)
+-  Custom admin panel (add/edit/delete books)
+-  Session-based shopping cart
+-  Responsive design with Bootstrap
+-  Docker containerization
+-  CI/CD pipeline with Jenkins
 
 ## Tech Stack
 
